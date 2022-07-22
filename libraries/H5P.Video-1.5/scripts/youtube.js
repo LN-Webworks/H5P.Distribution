@@ -290,6 +290,7 @@ H5P.VideoYouTube = (function ($) {
      * @returns {Number}
      */
     self.getDuration = function () {
+      localStorage.setItem('VideoDuration',player.getDuration());
       if (!player || !player.getDuration) {
         return;
       }
